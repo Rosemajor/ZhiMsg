@@ -5,6 +5,7 @@ import logging
 _LOGGER = logging.getLogger(__name__)
 
 
+
 class dingmsg:
 
     def __init__(self, hass, conf):
