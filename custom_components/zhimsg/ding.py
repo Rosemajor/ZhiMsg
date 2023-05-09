@@ -13,6 +13,7 @@ class dingmsg:
         self._secret = conf.get('secret')
         self._session = async_get_clientsession(hass)
 
+
     async def async_send(self, message, data):
         url = "https://oapi.dingtalk.com/robot/send?access_token=" + self._token
         if self._secret is not None:
